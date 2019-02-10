@@ -12,7 +12,7 @@ namespace DotNetCoreSettings
             // 設定ファイルの読み込み
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appconfig.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
 
             // 設定値の取得
